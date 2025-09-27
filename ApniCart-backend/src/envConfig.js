@@ -1,0 +1,16 @@
+require("dotenv").config();
+const MONGO_URI = process.env.MONGO_URI;
+const PORT = process.env.PORT;
+const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
+const ACCESS_TOKEN_EXPIRY = process.env.ACCESS_TOKEN_EXPIRY;
+
+const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
+const REFRESH_TOKEN_EXPIRY = process.env.REFRESH_TOKEN_EXPIRY;
+module.exports = {
+  MONGO_URI,
+  PORT,
+  REFRESH_TOKEN_SECRET,
+  REFRESH_TOKEN_EXPIRY,
+  ACCESS_TOKEN_EXPIRY,
+  ACCESS_TOKEN_SECRET,
+};
